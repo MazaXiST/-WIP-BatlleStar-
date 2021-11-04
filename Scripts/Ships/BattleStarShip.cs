@@ -1,14 +1,6 @@
 using Godot;
 using System;
 
-interface IArmory
-{
-    void Shot();
-}
-public class Weapon 
-{
-
-}
 public class BattleStarShip : RigidBody2D
 {
     // Declare member variables here. Examples:
@@ -262,7 +254,7 @@ protected void UpdateAppliedForce(Vector2 force)
 
 protected void _on_BurnTrailAnim_animation_finished()
 {
-    Console.WriteLine(1);
+    Console.WriteLine("BurnTrailAnim_animation_finished");
     //burnAnim.Stop();
     //if(body.HasMethod("SelfKill"))
     //    body.Call("SelfKill");
