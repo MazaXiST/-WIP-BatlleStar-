@@ -6,7 +6,7 @@ public class BattleStarShip : RigidBody2D
     // Declare member variables here. Examples:
     // private int a = 2;
     // private string b = "text";
-    protected const float SAME_DIRECTION_ANGLE = 0.075f;    
+    protected readonly float SAME_DIRECTION_ANGLE = 0.075f;    
     //protected readonly double ROTATION_OFFSET = Math.PI/2;
     protected readonly float MAX_SPEED = 500.0f;
     protected readonly float MAX_THRUST_ACCELERATION = 1000.0f;
