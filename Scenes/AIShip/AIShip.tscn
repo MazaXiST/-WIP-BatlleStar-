@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scenes/BattleStarShip/BattleStarShip.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scripts/Ships/AIShip.cs" type="Script" id=2]
+
+
+[node name="BattleStar" instance=ExtResource( 1 )]
+script = ExtResource( 2 )
+

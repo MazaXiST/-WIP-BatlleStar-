@@ -1,0 +1,41 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Scripts/Scenes_Levels/BattleSpace.cs" type="Script" id=1]
+[ext_resource path="res://Scenes/UI/ShipUI.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/BattleStarShip/BattleStarShip.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scripts/Ships/PlayerShip.cs" type="Script" id=4]
+[ext_resource path="res://Scenes/AIShip/AIShip.tscn" type="PackedScene" id=5]
+
+[node name="BattleSpace" type="Node2D"]
+z_index = -5
+script = ExtResource( 1 )
+
+[node name="GUILayer" type="CanvasLayer" parent="."]
+
+[node name="ShipUI" parent="GUILayer" instance=ExtResource( 2 )]
+show_behind_parent = true
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -1168.0
+margin_top = -600.0
+
+[node name="BattleStar" parent="." instance=ExtResource( 3 )]
+position = Vector2( 5000, 5000 )
+angular_damp = 2.0
+script = ExtResource( 4 )
+
+[node name="MainCamera" type="Camera2D" parent="BattleStar"]
+current = true
+drag_margin_h_enabled = false
+drag_margin_v_enabled = false
+
+[node name="AIShip" parent="." instance=ExtResource( 5 )]
+position = Vector2( 5200, 5200 )
+physics_material_override = null
+[connection signal="resized" from="GUILayer/ShipUI" to="." method="_on_ShipUI_resized"]
+[connection signal="PositionUpdated" from="BattleStar" to="GUILayer/ShipUI" method="_on_BattleStar_PositionUpdated"]
+[connection signal="ThrustUpdated" from="BattleStar" to="GUILayer/ShipUI" method="_on_BattleStar_ThrustUpdated"]
+[connection signal="TorqueUpdated" from="BattleStar" to="GUILayer/ShipUI" method="_on_BattleStar_TorqueUpdated"]
+[connection signal="body_entered" from="AIShip" to="AIShip" method="_on_BattleStar_body_entered"]

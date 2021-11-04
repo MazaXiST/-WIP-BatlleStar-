@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scenes/BackGrounds/Nebulas/Nebula.png" type="Texture" id=1]
+
+[node name="Nebula" type="Node2D"]
+show_behind_parent = true
+
+[node name="Nebula" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0.501961 )
+self_modulate = Color( 1, 1, 1, 0.501961 )
+show_behind_parent = true
+scale = Vector2( 1, 0.5 )
+texture = ExtResource( 1 )
+centered = false

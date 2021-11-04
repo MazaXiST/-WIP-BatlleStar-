@@ -1,0 +1,39 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scripts/MainMenu.cs" type="Script" id=1]
+[ext_resource path="res://Scenes/MainMenu/pressAnyKeyAnim.tres" type="Animation" id=2]
+
+[node name="MainMenu" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+
+[node name="pressAnyKeyLabel" type="Label" parent="CanvasModulate"]
+light_mask = 1048575
+anchor_right = 1.0
+margin_left = 300.0
+margin_top = 350.0
+margin_right = 450.0
+margin_bottom = 364.0
+rect_scale = Vector2( 2, 2 )
+custom_colors/font_color = Color( 0.584314, 0.6, 0.984314, 1 )
+text = "Press SPACE to START!"
+align = 1
+valign = 1
+
+[node name="twinklingAnim" type="AnimationPlayer" parent="CanvasModulate/pressAnyKeyLabel"]
+autoplay = "twinkling"
+anims/twinkling = ExtResource( 2 )
+
+[node name="Title" type="Label" parent="CanvasModulate"]
+margin_left = 150.0
+margin_top = 200.0
+margin_right = 227.0
+margin_bottom = 214.0
+rect_scale = Vector2( 3, 3 )
+size_flags_vertical = 5
+custom_colors/font_color = Color( 0.901961, 0.901961, 0.901961, 1 )
+custom_colors/font_color_shadow = Color( 0.137255, 0.121569, 1, 1 )
+custom_constants/shadow_as_outline = 1
+text = "BATTLESTAR"
+

@@ -1,0 +1,10 @@
+C:\Users\User\Documents\godot_progects\Battlestar\.mono\temp\bin\Debug\Battlestar.dll
+C:\Users\User\Documents\godot_progects\Battlestar\.mono\temp\bin\Debug\Battlestar.pdb
+C:\Users\User\Documents\godot_progects\Battlestar\.mono\temp\bin\Debug\GodotSharp.dll
+C:\Users\User\Documents\godot_progects\Battlestar\.mono\temp\bin\Debug\GodotSharp.pdb
+C:\Users\User\Documents\godot_progects\Battlestar\.mono\temp\bin\Debug\GodotSharp.xml
+C:\Users\User\Documents\godot_progects\Battlestar\.mono\temp\obj\Debug\Battlestar.csprojAssemblyReference.cache
+C:\Users\User\Documents\godot_progects\Battlestar\.mono\temp\obj\Debug\Battlestar.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\godot_progects\Battlestar\.mono\temp\obj\Debug\Battlestar.csproj.CopyComplete
+C:\Users\User\Documents\godot_progects\Battlestar\.mono\temp\obj\Debug\Battlestar.dll
+C:\Users\User\Documents\godot_progects\Battlestar\.mono\temp\obj\Debug\Battlestar.pdb
